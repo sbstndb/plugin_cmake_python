@@ -1,0 +1,604 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      The system is: Linux - 6.10.13-200.fc40.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/3.28.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/3.28.2/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-b5jgc5"
+      binary: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-b5jgc5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-b5jgc5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_652da/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_652da.dir/build.make CMakeFiles/cmTC_652da.dir/build
+        gmake[1]: Entering directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-b5jgc5'
+        Building CXX object CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++   -v -o CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs
+        COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_652da.dir/'
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_652da.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccNcI8eW.s
+        GNU C++17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/x86_64-pc-linux-gnu
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/backward
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include
+         /usr/local/include
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed
+         /usr/include
+        End of search list.
+        GNU C++17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 21f67e4f92414fc1e69304095e19e25e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_652da.dir/'
+         as -v --64 -o CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNcI8eW.s
+        GNU assembler version 2.41 (x86_64-redhat-linux) using BFD version version 2.41-37.fc40
+        COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_652da
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_652da.dir/link.txt --verbose=1
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++  -v CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_652da 
+        Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs
+        COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++
+        COLLECT_LTO_WRAPPER=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Spack GCC) 
+        COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_652da' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_652da.'
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/collect2 -plugin /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/liblto_plugin.so -plugin-opt=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjgd7oc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_652da /lib/../lib64/crt1.o /lib/../lib64/crti.o /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../.. -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_652da' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_652da.'
+        gmake[1]: Leaving directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-b5jgc5'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0]
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/x86_64-pc-linux-gnu]
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/backward]
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include]
+          add: [/usr/local/include]
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include]
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include/c++/12.4.0]
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/x86_64-pc-linux-gnu] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include/c++/12.4.0/x86_64-pc-linux-gnu]
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/backward] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include/c++/12.4.0/backward]
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include]
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include/c++/12.4.0;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include/c++/12.4.0/x86_64-pc-linux-gnu;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include/c++/12.4.0/backward;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include;/usr/local/include;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-b5jgc5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_652da/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_652da.dir/build.make CMakeFiles/cmTC_652da.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-b5jgc5']
+        ignore line: [Building CXX object CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++   -v -o CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs]
+        ignore line: [COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64' --with-boot-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_652da.dir/']
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_652da.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccNcI8eW.s]
+        ignore line: [GNU C++17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/x86_64-pc-linux-gnu]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../include/c++/12.4.0/backward]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 21f67e4f92414fc1e69304095e19e25e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_652da.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNcI8eW.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-redhat-linux) using BFD version version 2.41-37.fc40]
+        ignore line: [COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_652da]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_652da.dir/link.txt --verbose=1]
+        ignore line: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++  -v CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_652da ]
+        ignore line: [Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs]
+        ignore line: [COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64' --with-boot-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_652da' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_652da.']
+        link line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/collect2 -plugin /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/liblto_plugin.so -plugin-opt=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjgd7oc.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_652da /lib/../lib64/crt1.o /lib/../lib64/crti.o /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../.. -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccjgd7oc.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_652da] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o] ==> obj [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o]
+          arg [-L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0] ==> dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0]
+          arg [-L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64] ==> dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../..] ==> dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../..]
+          arg [-rpath] ==> ignore
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64] ==> ignore
+          arg [CMakeFiles/cmTC_652da.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o] ==> obj [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0]
+        collapse library dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../..] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64;/lib64;/usr/lib64;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-4IVvqq"
+      binary: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-4IVvqq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-4IVvqq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dbd79/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dbd79.dir/build.make CMakeFiles/cmTC_dbd79.dir/build
+        gmake[1]: Entering directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-4IVvqq'
+        Building C object CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc   -v -o CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs
+        COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Spack GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dbd79.dir/'
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_dbd79.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccMRx7y4.s
+        GNU C17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include
+         /usr/local/include
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed
+         /usr/include
+        End of search list.
+        GNU C17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 12.4.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 7d26be48abcdd5508547d88cfb1f4a2c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dbd79.dir/'
+         as -v --64 -o CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o /tmp/ccMRx7y4.s
+        GNU assembler version 2.41 (x86_64-redhat-linux) using BFD version version 2.41-37.fc40
+        COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_dbd79
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbd79.dir/link.txt --verbose=1
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc  -v CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o -o cmTC_dbd79 
+        Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs
+        COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc
+        COLLECT_LTO_WRAPPER=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c,c++,fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64' --with-boot-ldflags='-Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl,-rpath,/usr/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl,-rpath,/usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 12.4.0 (Spack GCC) 
+        COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dbd79' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dbd79.'
+         /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/collect2 -plugin /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/liblto_plugin.so -plugin-opt=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnuGiQm.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dbd79 /lib/../lib64/crt1.o /lib/../lib64/crti.o /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../.. -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dbd79' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dbd79.'
+        gmake[1]: Leaving directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-4IVvqq'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include]
+          add: [/usr/local/include]
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include]
+          add: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include]
+        collapse include dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include;/usr/local/include;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:5 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-4IVvqq']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dbd79/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_dbd79.dir/build.make CMakeFiles/cmTC_dbd79.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-4IVvqq']
+        ignore line: [Building C object CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc   -v -o CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs]
+        ignore line: [COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64' --with-boot-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Spack GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dbd79.dir/']
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_dbd79.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccMRx7y4.s]
+        ignore line: [GNU C17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/include]
+        ignore line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Spack GCC) version 12.4.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 12.4.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 7d26be48abcdd5508547d88cfb1f4a2c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dbd79.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o /tmp/ccMRx7y4.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-redhat-linux) using BFD version version 2.41-37.fc40]
+        ignore line: [COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_dbd79]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbd79.dir/link.txt --verbose=1]
+        ignore line: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc  -v CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o -o cmTC_dbd79 ]
+        ignore line: [Reading specs from /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/specs]
+        ignore line: [COLLECT_GCC=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /tmp/sbstndbs/spack-stage/spack-stage-gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/spack-src/configure --prefix=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp --with-pkgversion='Spack GCC' --with-bugurl=https://github.com/spack/spack/issues --disable-multilib --enable-languages=c c++ fortran --disable-nls --disable-canonical-system-headers --with-system-zlib --with-zstd-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/include --with-zstd-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib --enable-bootstrap --with-mpfr-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/include --with-mpfr-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib --with-gmp-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/include --with-gmp-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib --with-mpc-include=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/include --with-mpc-lib=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib --without-isl --with-stage1-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64' --with-boot-ldflags='-Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-runtime-14.2.1-l5bdg5vnucktucxpy4loyzjgqntg6xnm/lib -Wl -rpath /usr/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gmp-6.3.0-fq3mjs65ajos3qlr2bc4phx3kvpcxmsh/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpc-1.3.1-w7yg5kpj6uegzap2snr7ryo3re2kwonk/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/mpfr-4.2.1-faznmg57pwxyauxe5t3fk4m2muuupuox/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zlib-ng-2.2.1-6abxah6lwikqduaqtcpu6cvk3rcvwnxw/lib -Wl -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/zstd-1.5.6-mxytnb6xasu6f6kajrzyt6473rwmp6a5/lib -Wl -rpath /usr/lib64 -static-libstdc++ -static-libgcc' --with-build-config=spack]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 12.4.0 (Spack GCC) ]
+        ignore line: [COMPILER_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dbd79' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_dbd79.']
+        link line: [ /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/collect2 -plugin /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/liblto_plugin.so -plugin-opt=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnuGiQm.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dbd79 /lib/../lib64/crt1.o /lib/../lib64/crti.o /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../.. -rpath /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64 CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/libexec/gcc/x86_64-pc-linux-gnu/12.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccnuGiQm.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_dbd79] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o] ==> obj [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o]
+          arg [-L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0] ==> dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0]
+          arg [-L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64] ==> dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../..] ==> dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../..]
+          arg [-rpath] ==> ignore
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64] ==> ignore
+          arg [CMakeFiles/cmTC_dbd79.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o] ==> obj [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0]
+        collapse library dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../../../lib64] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/../../..] ==> [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtbegin.o;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib/gcc/x86_64-pc-linux-gnu/12.4.0;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib64;/lib64;/usr/lib64;/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sbstndbs/Cabana/install/share/cmake/Cabana/CabanaConfig.cmake:18 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-Tjgus7"
+      binary: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-Tjgus7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/cmake;/home/sbstndbs/Cabana/install/share/cmake/Cabana"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-Tjgus7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_49cf5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_49cf5.dir/build.make CMakeFiles/cmTC_49cf5.dir/build
+        gmake[1]: Entering directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-Tjgus7'
+        Building CXX object CMakeFiles/cmTC_49cf5.dir/test_mpi.cpp.o
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++  -isystem /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/include  -o CMakeFiles/cmTC_49cf5.dir/test_mpi.cpp.o -c /home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-Tjgus7/test_mpi.cpp
+        Linking CXX executable cmTC_49cf5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49cf5.dir/link.txt --verbose=1
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++ -Wl,-rpath -Wl,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/lib CMakeFiles/cmTC_49cf5.dir/test_mpi.cpp.o -o cmTC_49cf5  -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/lib /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/lib/libmpi.so 
+        gmake[1]: Leaving directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-Tjgus7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sbstndbs/Cabana/install/share/cmake/Cabana/CabanaConfig.cmake:18 (find_dependency)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-m8Cdt1"
+      binary: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-m8Cdt1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/cmake;/home/sbstndbs/Cabana/install/share/cmake/Cabana"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-m8Cdt1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_233e8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_233e8.dir/build.make CMakeFiles/cmTC_233e8.dir/build
+        gmake[1]: Entering directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-m8Cdt1'
+        Building CXX object CMakeFiles/cmTC_233e8.dir/test_mpi.cpp.o
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++  -isystem /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/include  -o CMakeFiles/cmTC_233e8.dir/test_mpi.cpp.o -c /home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-m8Cdt1/test_mpi.cpp
+        Linking CXX executable cmTC_233e8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_233e8.dir/link.txt --verbose=1
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++ -Wl,-rpath -Wl,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/lib CMakeFiles/cmTC_233e8.dir/test_mpi.cpp.o -o cmTC_233e8  -Wl,-rpath,/home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/lib /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/openmpi-5.0.5-euaca7cgibudvubppeoprj5hvxyzayvz/lib/libmpi.so 
+        gmake[1]: Leaving directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-m8Cdt1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/usr/local/share/cmake/pybind11/pybind11Common.cmake:295 (check_cxx_compiler_flag)"
+      - "/usr/local/share/cmake/pybind11/pybind11Common.cmake:340 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "/usr/local/share/cmake/pybind11/pybind11Common.cmake:396 (_pybind11_generate_lto)"
+      - "/usr/local/share/cmake/pybind11/pybind11Config.cmake:250 (include)"
+      - "examples/CMakeLists.txt:3 (find_package)"
+    checks:
+      - "Performing Test HAS_FLTO"
+    directories:
+      source: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-ZmbzVN"
+      binary: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-ZmbzVN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/sbstndbs/3/plugin_cmake_python/ExaMPM/cmake;/home/sbstndbs/Cabana/install/share/cmake/Cabana"
+    buildResult:
+      variable: "HAS_FLTO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-ZmbzVN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6c659/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6c659.dir/build.make CMakeFiles/cmTC_6c659.dir/build
+        gmake[1]: Entering directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-ZmbzVN'
+        Building CXX object CMakeFiles/cmTC_6c659.dir/src.cxx.o
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++ -DHAS_FLTO  -flto -fno-fat-lto-objects -o CMakeFiles/cmTC_6c659.dir/src.cxx.o -c /home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-ZmbzVN/src.cxx
+        Linking CXX executable cmTC_6c659
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c659.dir/link.txt --verbose=1
+        /home/sbstndbs/spack/opt/spack/linux-fedora40-zen2/gcc-14.2.1/gcc-12.4.0-zh5wfjviiby64kzkmdpwe5sko22ysxxp/bin/c++ CMakeFiles/cmTC_6c659.dir/src.cxx.o -o cmTC_6c659  -flto 
+        gmake[1]: Leaving directory '/home/sbstndbs/3/plugin_cmake_python/ExaMPM/build/CMakeFiles/CMakeScratch/TryCompile-ZmbzVN'
+        
+      exitCode: 0
+...

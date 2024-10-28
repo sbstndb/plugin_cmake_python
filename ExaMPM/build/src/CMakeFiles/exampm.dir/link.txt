@@ -1,0 +1,2 @@
+/usr/bin/ar qc libexampm.a CMakeFiles/exampm.dir/ExaMPM_Mesh.cpp.o
+/usr/bin/ranlib libexampm.a
